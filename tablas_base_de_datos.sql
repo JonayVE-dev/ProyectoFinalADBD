@@ -35,7 +35,7 @@ CREATE TABLE Merchandising (
 );
 
 CREATE TABLE Perifericos (
-    id_perifericos VARCHAR(50) PRIMARY KEY REFERENCES Productos(id_producto) ON DELETE CASCADE,
+    id_periferico VARCHAR(50) PRIMARY KEY REFERENCES Productos(id_producto) ON DELETE CASCADE,
     tipo VARCHAR(50) NOT NULL,
     marca VARCHAR(50) NOT NULL
 );

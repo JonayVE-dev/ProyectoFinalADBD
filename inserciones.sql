@@ -6,7 +6,7 @@ INSERT INTO Productos (id_producto, nombre, precio) VALUES ('PMOU1', 'Ratón 1',
 
 INSERT INTO Videojuegos (id_videojuego, plataforma, genero) VALUES ('VLOL1', 'PC', 'MOBA');
 INSERT INTO Merchandising (id_merchandising, tipo) VALUES ('MCAM1', 'Camiseta');
-INSERT INTO Perifericos (id_perifericos, tipo, marca) VALUES ('PMOU1', 'Ratón', 'Logitech');
+INSERT INTO Perifericos (id_periferico, tipo, marca) VALUES ('PMOU1', 'Ratón', 'Logitech');
 
 INSERT INTO Proveedores (id_proveedor, nombre, direccion, telefonos) VALUES ('PROV1', 'Proveedor 1', 'Calle 1', ARRAY['111111111']);
 INSERT INTO Proveedores (id_proveedor, nombre, direccion, telefonos) VALUES ('PROV2', 'Proveedor 2', 'Calle 2', ARRAY['222222222']);
