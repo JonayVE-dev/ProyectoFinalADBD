@@ -19,7 +19,7 @@
 > esto ejecutará el [código](app.py)
 
 > [!NOTE]
-> En el [informe](ADDBD_ Tiendas_Videojuegos_(GameLand).pdf) hemos añadido los casos de ejemplos solicitados.
+> En el [informe](ADDBD_ Tiendas_Videojuegos_\(GameLand\).pdf) hemos añadido los casos de ejemplos solicitados.
 > Estos se encuentran en el apartado 7 del informe.
 
 ## Modelo Entidad Relación
