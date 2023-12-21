@@ -1,8 +1,8 @@
 # Proyecto Final ADBD
 ## Integrantes
--Gabriel Jonay Vera Estévez
--Muhammad Campos Preira
--Daniel González de Chaves González
+- Gabriel Jonay Vera Estévez
+- Muhammad Campos Preira
+- Daniel González de Chaves González
 
 > [!IMPORTANT]
 > El archivo [tablas_base_de_datos](tablas_base_de_datos.sql) contiene el script para crear la base de datos, las tablas y los triggers necesarios.
