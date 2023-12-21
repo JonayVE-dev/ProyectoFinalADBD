@@ -25,6 +25,7 @@
 > [!NOTE]
 > En el [informe](ADDBD_Tiendas_Videojuegos_GameLand.pdf) hemos añadido los casos de ejemplos solicitados.
 > Estos se encuentran en el apartado 7 del informe.
+> En este [vídeo](https://www.youtube.com/watch?v=yOu4f1kMP2Q) está la explicación en inglés.
 
 ## Modelo Entidad Relación
 
