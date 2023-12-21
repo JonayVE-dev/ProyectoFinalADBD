@@ -11,6 +11,12 @@
 > \i inserciones.sql
 >  ```
 >  para realizar la carga inicial de datos
+>
+> Para iniciar la API debemos ejecutar lo siguiente
+> ```bash
+> flask --app app run --host 0.0.0.0 --port=8080
+> ```
+> esto ejecutará el [código](app.py)
 
 ## Modelo Entidad Relación
 
