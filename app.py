@@ -10,7 +10,7 @@ def get_db_connection():
         # user=os.environ['DB_USERNAME'],
 		user="postgres",
 		# password=os.environ['DB_PASSWORD']
-        password="kiara312")
+        password="postgres")
     return conn
 
 def insert_into_productos(id_producto, nombre, precio):
