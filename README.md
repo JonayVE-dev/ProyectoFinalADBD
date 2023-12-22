@@ -28,11 +28,11 @@
 
 ## Modelo Entidad Relación
 
-![Modelo Entidad Relación](entidad-relacion.png)
+![Modelo Entidad Relación](imagenes/entidad-relacion.png)
 
 ## Modelo Relacional
 
-![Modelo Relacional](relacional-proyecto.png)
+![Modelo Relacional](imagenes/relacional-proyecto.png)
 
 ## Consultas de ejemplo
 
@@ -51,7 +51,7 @@ INSERT INTO Devoluciones (id_tienda, fecha_venta, id_cliente, id_venta, producto
 
 Tabla Devoluciones resultante tras las inserciones:
 
-![consulta1](image10.png)
+![consulta1](imagenes/image10.png)
 
 ### Consulta 2
 
@@ -67,7 +67,7 @@ INSERT INTO Ventas (id_empleado, id_cliente, productos, cantidades) VALUES (9999
 
 Tabla Ventas resultante tras las inserciones:
 
-![consulta2](image6.png)
+![consulta2](imagenes/image6.png)
 
 ### Consulta 3
 
@@ -79,7 +79,7 @@ INSERT INTO Envios (id_proveedor, id_tienda, productos, fecha, cantidades) VALUE
 
 Tabla tras el envío:
 
-![consulta3](image12.png)
+![consulta3](imagenes/image12.png)
 
 Antes venta (verificar si hay producto suficiente):
 
@@ -89,7 +89,7 @@ INSERT INTO Ventas (id_empleado, id_cliente, productos, cantidades) VALUES (9999
 
 Error producido al tratar de vender más cantidad del producto de la que tenemos en stock:
 
-![consulta3](image8.png)
+![consulta3](imagenes/image8.png)
 
 Si se intenta vender un producto que no existe en la tienda también da error:
 
@@ -97,7 +97,7 @@ Si se intenta vender un producto que no existe en la tienda también da error:
 INSERT INTO Ventas (id_empleado, id_cliente, productos, cantidades) VALUES (99999999, 45000000, ARRAY['VElDelAnillo'], ARRAY[25]);
 ```	
 
-![consulta3](image15.png)
+![consulta3](imagenes/image15.png)
 
 Después de una venta:
 
@@ -107,7 +107,7 @@ INSERT INTO Ventas (id_empleado, id_cliente, productos, cantidades) VALUES (9999
 
 Tabla tras la venta:
 
-![consulta3](image7.png)
+![consulta3](imagenes/image7.png)
 
 Después de una devolución:
 
@@ -117,7 +117,7 @@ INSERT INTO Devoluciones (id_tienda, fecha_venta, id_cliente, id_venta, producto
 
 Tabla tras la devolución:
 
-![consulta3](image2.png)
+![consulta3](imagenes/image2.png)
 
 ```sql
 INSERT INTO Devoluciones (id_tienda, fecha_venta, id_cliente, id_venta, productos, cantidades) VALUES ('TIENDA2', '2023-12-20', 45000000, 2, ARRAY['VLOL1', 'MCAM1'], ARRAY[18, 18]);
@@ -125,7 +125,7 @@ INSERT INTO Devoluciones (id_tienda, fecha_venta, id_cliente, id_venta, producto
 
 Error obtenido al tratar de devolver una cantidad mayor a la comprada para cada producto:
 
-![consulta3](image19.png)
+![consulta3](imagenes/image19.png)
 
 
 ```sql
@@ -134,7 +134,7 @@ INSERT INTO Devoluciones (id_tienda, fecha_venta, id_cliente, id_venta, producto
 
 Error obtenido al tratar de devolver un producto que no fue comprado:
 
-![consulta3](image18.png)
+![consulta3](imagenes/image18.png)
 
 ### Consulta 4
 
@@ -148,7 +148,7 @@ INSERT INTO Contrato (id_provedor, fecha_inicio, duracion) VALUES ('PROV3', '202
 
 Tabla Contrato resultante tras las inserciones:
 
-![consulta4](image3.png)
+![consulta4](imagenes/image3.png)
 
 
 ### Consulta 5
@@ -161,7 +161,7 @@ INSERT INTO Envios (id_proveedor, id_tienda, productos, fecha, cantidades) VALUE
 
 Como podemos observar no ha sido posible ya que no estamos dentro de la fecha. Se puede ver en el apartado anterior que el contrato del PROV3 finalizó el 31-12-2020.
 
-![consulta5](image17.png)
+![consulta5](imagenes/image17.png)
 
 ### Consulta 6
 
@@ -171,7 +171,7 @@ INSERT INTO Trabaja (id_tienda, id_empleado, cargo, fecha_inicio, duracion) VALU
 
 Error obtenido al tratar de hacer que un trabajador esté en dos tiendas al mismo tiempo:
 
-![consulta6](image4.png)
+![consulta6](imagenes/image4.png)
 
 ### Consulta 7
 
@@ -181,7 +181,7 @@ Tiendas, al eliminar una tienda se observa como toda la información asociada de
 DELETE FROM TIENDA WHERE id_tienda = 'TIENDA2';
 ```
 
-![consulta7](image20.png)
+![consulta7](imagenes/image20.png)
 
 ### Consulta 8
 
@@ -191,7 +191,7 @@ Proveedores, al eliminar un proveedor se observa como toda la información asoci
 DELETE FROM PROVEEDORES WHERE id_proveedor = 'PROV1';
 ```
 
-![consulta8](image16.png)
+![consulta8](imagenes/image16.png)
 
 ### Consulta 9
 
@@ -202,7 +202,7 @@ Salario
 INSERT INTO Empleados (id_empleado, nombre, apellidos, salario) VALUES (99999997, 'Empleado 3', 'Apellido 1', 999);
 ```
 
-![consulta9](image14.png)
+![consulta9](imagenes/image14.png)
 
 ### Consulta 10
 
@@ -215,5 +215,5 @@ INSERT INTO Proveedores (id_proveedor, nombre, direccion, telefonos) VALUES ('PR
 INSERT INTO Contrato (id_provedor, fecha_inicio, duracion) VALUES ('PROV4', '1999-12-31', 365*5);
 ```
 
-![consulta10](image13.png)
+![consulta10](imagenes/image13.png)
 
